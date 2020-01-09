@@ -58,8 +58,8 @@ public class MainFaceSignInActivity extends Activity implements OnClickListener 
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainFaceSignInActivity.this, HomeActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 				startActivity(intent);
-				finish();
 			}
 		});
 		//课表页跳转
@@ -68,8 +68,8 @@ public class MainFaceSignInActivity extends Activity implements OnClickListener 
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainFaceSignInActivity.this, CourseActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 				startActivity(intent);
-				finish();
 			}
 		});
 		//上传页跳转
@@ -78,8 +78,8 @@ public class MainFaceSignInActivity extends Activity implements OnClickListener 
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainFaceSignInActivity.this, UpDownloadActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 				startActivity(intent);
-				finish();
 			}
 		});
 		//我的页跳转
@@ -88,8 +88,8 @@ public class MainFaceSignInActivity extends Activity implements OnClickListener 
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainFaceSignInActivity.this, MineActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 				startActivity(intent);
-				finish();
 			}
 		});
 	}

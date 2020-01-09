@@ -12,7 +12,7 @@ public class User {
     }
     public void init(){
         this.userId = "1";
-        this.userName = "TestXyy";
+        this.userName = "Hello";
         this.userPaw = "1";
     }
 }

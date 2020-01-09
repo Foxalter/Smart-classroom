@@ -371,7 +371,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         String et_login_name = mEtLoginUsername.getText().toString();
         String et_login_pwd = mEtLoginPwd.getText().toString();
         boolean flag = uService.check(et_login_name, et_login_pwd);
+        //测试用
         flag = true;
+        LoginActivity.curUser.userId = et_login_name;
         if (flag) {
             //Log.i("TAG","登录成功");
             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);

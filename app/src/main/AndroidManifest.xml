@@ -9,6 +9,14 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
     <application
         android:name=".sdk_demo.Application"
         android:allowBackup="true"
@@ -38,6 +46,28 @@
         </activity>
         <activity android:name="com.example.updownload.sdk_demo.MineActivity">
         </activity>
+        <activity android:name="com.example.updownload.music.MusicActivity">
+        </activity>
+        <activity android:name="com.example.updownload.weather.TemperatureShowActivity">
+        </activity>
+        <activity android:name="com.example.updownload.classroom.MainClassroomActivity">
+        </activity>
+        <activity android:name="com.example.updownload.classroom.LightControlActivity">
+        </activity>
+        <activity android:name="com.example.updownload.classroom.TemperatureControlActivity">
+        </activity>
+        <activity android:name="com.example.updownload.scan.CameraScanningActivity">
+        </activity>
+        <activity android:name="com.example.updownload.scan.ZXingActivity">
+        </activity>
+        <activity android:name="com.example.updownload.scan.ZXingDealActivity">
+        </activity>
+        <activity android:name="com.example.updownload.qrcode.QrcodeActivity">
+        </activity>
+        <activity android:name="com.example.updownload.qrcode.SignActivity">
+        </activity>
+
+
         <activity
             android:name="com.example.updownload.LoginActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -64,6 +94,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service android:name="com.example.updownload.music.MusicService" />
     </application>
 
 </manifest>
